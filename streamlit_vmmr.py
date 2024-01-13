@@ -15,7 +15,7 @@ if __name__ == '__main__':
 
         st.image(file)
 
-        st.write("The top 3 most likely vehicles are:")
+        st.write("The top 5 most likely vehicles are:")
 
         # CSS to inject contained in a string
         hide_table_row_index = """
