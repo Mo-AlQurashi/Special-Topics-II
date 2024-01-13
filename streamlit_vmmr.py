@@ -9,7 +9,7 @@ if __name__ == '__main__':
     file = st.file_uploader("Upload Your Image")
 
     if file:
-        classname_matches = predict(file, model_name="resnet50_40epochs.pt", k=3)
+        classname_matches = predict(file, model_name="resnet50_40epochs.pt", k=5)
         classname_matches = pd.DataFrame(data=classname_matches, columns=["Top 3 Predictions"])
         # classname_matches = classname_matches.set_axis(["Top 5 Predictions"], axis=1)
 
